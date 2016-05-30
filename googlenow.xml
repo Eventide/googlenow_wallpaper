@@ -1,0 +1,64 @@
+<background>
+  <starttime>
+    <year>2011</year>
+    <month>11</month>
+    <day>24</day>
+    <hour>6</hour>
+    <minute>00</minute>
+    <second>00</second>
+  </starttime>
+
+<!-- This animation will start at 6 AM. -->
+
+<!-- We start with sunrise at 6 AM. It will remain up for 3 hour. -->
+<static>
+<duration>10800.0</duration>
+<file>/usr/share/backgrounds/googlenow/1.jpg</file>
+</static>
+
+<!-- Sunrise starts to transition to day at 9 AM. The transition lasts for 1 hours, ending at 10 AM. -->
+<transition type="overlay">
+<duration>3600.0</duration>
+<from>/usr/share/backgrounds/googlenow/1.jpg</from>
+<to>/usr/share/backgrounds/googlenow/2.jpg</to>
+</transition>
+
+<!-- It's 10 AM, we're showing the day image in full force now, for 7 hours ending at 5 PM. -->
+<static>
+<duration>25200.0</duration>
+<file>/usr/share/backgrounds/googlenow/2.jpg</file>
+</static>
+
+<!-- It's 5 PM and it's going to start to get dark. This will transition for 1 hours up until 6 PM. -->
+<transition type="overlay">
+<duration>3600.0</duration>
+<from>/usr/share/backgrounds/googlenow/2.jpg</from>
+<to>/usr/share/backgrounds/googlenow/3.jpg</to>
+</transition>
+
+<!-- It's dusk. It'll last for 1.5 hours until 7.30 PM. -->
+<static>
+<duration>5400.0</duration>
+<file>/usr/share/backgrounds/googlenow/3.jpg</file>
+</static>
+
+<!-- It's 7.30 PM. We'll get darker for 1 hour up until 8.30 PM. -->
+<transition type="overlay">
+<duration>3600.0</duration>
+<from>/usr/share/backgrounds/googlenow/3.jpg</from>
+<to>/usr/share/backgrounds/googlenow/4.jpg</to>
+</transition>
+
+<!-- It's 8.5 PM. It'll last for 9 hour until 5 AM. -->
+<static>
+<duration>30600.0</duration>
+<file>/usr/share/backgrounds/googlenow/4.jpg</file>
+</static>
+
+<!-- It's 5 AM. We'll start transitioning to sunrise for 1 hour up until 6 AM. -->
+<transition type="overlay">
+<duration>3600.0</duration>
+<from>/usr/share/backgrounds/googlenow/4.jpg</from>
+<to>/usr/share/backgrounds/googlenow/1.jpg</to>
+</transition>
+</background>

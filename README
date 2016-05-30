@@ -1,0 +1,14 @@
+#+TITLE: Dynamic Wallpaper based on google now backgrounds
+* Introduction
+This is a dynamic wallpaper for GNOME based on google now backgrounds.
+
+* How to apply this wallpaper
+1. Copy all images to /usr/share/backgrounds/googlenow/ directory.
+2. Using googlenow.xml file as wallpaper via gnome-tweak-tool or gsettings
+#+BEGIN_SRC SHELL
+	$ gsettings set org.gnome.desktop.background picture-uri XML_FILE
+#+END_SRC
+3. (optional) Using googlenow.xml file as screensaver wallpaper
+#+BEGIN_SRC 
+	$ gsettings set org.gnome.desktop.screensaver picture-uri XML_FILE
+#+END_SRC
