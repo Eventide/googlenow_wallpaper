@@ -10,22 +10,22 @@
 
 <!-- This animation will start at 6 AM. -->
 
-<!-- We start with sunrise at 6 AM. It will remain up for 3 hour. -->
+<!-- We start with sunrise at 6 AM. It will remain up for 4 hour. -->
 <static>
-<duration>10800.0</duration>
+<duration>14400.0</duration>
 <file>/usr/share/backgrounds/googlenow/1.jpg</file>
 </static>
 
-<!-- Sunrise starts to transition to day at 9 AM. The transition lasts for 1 hours, ending at 10 AM. -->
+<!-- Sunrise starts to transition to day at 10 AM. The transition lasts for 1 hours, ending at 11 AM. -->
 <transition type="overlay">
 <duration>3600.0</duration>
 <from>/usr/share/backgrounds/googlenow/1.jpg</from>
 <to>/usr/share/backgrounds/googlenow/2.jpg</to>
 </transition>
 
-<!-- It's 10 AM, we're showing the day image in full force now, for 7 hours ending at 5 PM. -->
+<!-- It's 11 AM, we're showing the day image in full force now, for 6 hours ending at 5 PM. -->
 <static>
-<duration>25200.0</duration>
+<duration>21600.0</duration>
 <file>/usr/share/backgrounds/googlenow/2.jpg</file>
 </static>
 
